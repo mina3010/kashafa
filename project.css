@@ -1,0 +1,134 @@
+/* Basic Styles */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Starts elements from the top */
+    align-items: center;
+    background-image: url('الخلفية.jpg');
+    /* Light background color */
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.airplane {
+    font-size: 3em;
+    cursor: grab;
+    margin-bottom: 20px;
+    background-color: #ffeb3b;
+    /* Bright yellow background for visibility */
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.drop-area-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+    /* Gap between drop areas */
+    margin-bottom: 20px;
+    /* Space between the drop areas and the output text */
+    padding: 20px;
+}
+
+.drop-area {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 10px;
+    background: #3f51b5;
+    /* Default color for drop areas */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.drop-area:hover {
+    background: #303f9f;
+    /* Darker color on hover */
+}
+
+.drop-area.over {
+    background: #4caf50;
+    /* Color when item is dragged over */
+    border-color: #388e3c;
+}
+
+
+/* Output Paragraph */
+
+#output {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Background color for output text */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    /* Adjust the width to make it look centered */
+    max-width: 600px;
+}
+
+
+/* Background Image Styling */
+
+body.bg-joy {
+    background-image: url('ارض الفرح.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.bg-peace {
+    background-image: url('ارض السلام.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.bg-light {
+    background-image: url('ارض الضياء.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.bg-good {
+    background-image: url('ارض الجيدة.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.bg-pure {
+    background-image: url('ارض النقاء.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.bg-victory {
+    background-image: url('ارض النصرة.jpg');
+    background-size: cover;
+    background-position: center;
+}
